@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #F9F4F6;
+    --secondary-color: #fff;
+    --title-color: #FF00BF;
+    --text-color: #4A4A4A;
+    --second-text-color: #999999;
+    --button-color: #FF3665;
+}
+
+/* header */
+body {
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu-links li a {
+    color: var(--second-text-color);
+
+}
+
+.menu-links li a:hover {
+    color: var(--title-color);
+    transition: 0.3s ease-in;
+}
+
+#btn-hamburguer {
+    display: none;
+}
+
+#btn-hamburguer img {
+    width: 60px;
+}
+
+/* hero */
+#hero {
+    padding: 2.2rem 2rem;
+    margin-top: 5rem;
+    height: 53vh;
+}
+
+#hero-content {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+h1 span {
+    display: block;
+}
+
+span {
+    color: var(--title-color);
+}
+
+.btn-cta {
+    background-color: var(--button-color);
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 25px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    background-color: #ff023d;
+    transition: 0.2s ease-in;
+}
+
+/* sobre estilização */
+#sobre {
+    margin-top: 5rem;
+    padding: 2rem 2rem;
+
+}
+
+#sobre-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#sobre-text {
+    max-width: 50vw;
+}
+
+#sobre-text .subtitle {
+    color: var(--title-color);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+#sobre-text p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+#sobre-text .text-sobre {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#sobre-img {
+    width: 450px;
+}
+
+#sobre-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* habilidades seção */
+#skills {
+    margin-top: 3rem;
+    padding: 2rem 2rem;
+    background-color: var(--secondary-color);
+}
+
+#box-content-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skill-content .text h4 {
+    color: var(--title-color);
+    font-size: 1.5rem;
+}
+
+.skill-content .text p {
+    color: var(--text-color);
+    font-size: 0.8rem;
+}
+
+.img-skill {
+    width: 360px;
+}
+
+.img-skill img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* SEÇÃO DE AVALIAÇÃO */
+#services {
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+}
+
+#service-contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+#service-contents .box-service {
+    text-align: left;
+}
+
+#service-contents .box-service .service-title {
+    color: var(--title-color);
+    font-size: 1.3rem;
+}
+
+.box-service p {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+#service-contents .box-service img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+/* seção de avaliação */
+#avaliation {
+    padding: 2rem 2rem;
+    margin-top: 3.3rem;
+}
+
+#avaliation h2 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+#avaliation h2 span {
+    display: block;
+}
+
+#avaliation-content {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem 2rem;
+
+}
+
+.box-avaliation {
+    background-color: #fff;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 330px;
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+}
+
+.box-avaliation .commentary {
+    margin-bottom: 3rem;
+    color: var(--text-color);
+}
+
+.box-avaliation .client-info {
+    margin-top: 4rem;
+}
+
+.box-avaliation .name {
+    color: var(--title-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.box-avaliation .service-client {
+    color: var(--second-text-color);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+#map-local {
+    padding: 2rem 2rem;
+    margin-top: 3rem;
+    background-color: #ffffff;
+}
+
+#map-local h2 {
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+#map-local .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* formulário */
+#contact {
+    padding: 2.3rem 2rem;
+    padding-top: 2rem;
+    /* background-color: #e9e8e8; */
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+#contact h2 span {
+    display: block;
+
+}
+
+#box-form {
+    padding: 2rem 2rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#box-form form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+#box-form form .form-input label {
+    color: #8a8a8add;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+#box-form form input {
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+#box-form form input,
+textarea {
+    width: 25vw;
+    background-color: #ffffff;
+    border: 1px solid #b8b8b8dd;
+}
+textarea{
+    padding: 2.4rem;
+    height: 24vh;
+    outline: none;
+    border-radius: 10px;
+}
+.btn-submit{
+    background-color: var(--button-color);
+    padding: 0.6rem 1.4rem;
+    margin-top: 1.5rem;
+    width: 330px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+.btn-submit:hover{
+    background-color: #ff003c;
+    transition: 0.2s ease-in;
+}
+footer{
+    padding: 2rem 2rem;
+}
+#footer-content{
+    display: flex;
+    gap: 4rem;
+}
+.li-footer .subtitle{
+color: var(--title-color);
+font-weight: bold;
+}
+.li-footer li a{
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
